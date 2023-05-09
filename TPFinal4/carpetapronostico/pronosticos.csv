@@ -1,0 +1,19 @@
+﻿PARTICIPANTE,PARTIDO,RONDA,EQUIPO1,GANA1,EMPATE,GANA2,EQUIPO2
+Mariana,1,1,Argentina,x,-,-,Arabia Saudita
+Mariana,2,1,Polonia,-,x,-,Mexico
+Mariana,1,2,Argentina,x,-,-,Mexico
+Mariana,2,2,Arabia Saudita,-,-,x,Polonia
+Mariana,1,3,Argentina,x,-,-,Polonia
+Mariana,2,3,Arabia Saudita,x,-,-,Mexico
+Pedro,1,1,Argentina,x,-,-,Arabia Saudita
+Pedro,2,1,Polonia,-,-,x,Mexico
+Pedro,1,2,Argentina,x,-,-,Mexico
+Pedro,2,2,Arabia Saudita,-,x,-,Polonia
+Pedro,1,3,Argentina,x,-,-,Polonia
+Pedro,2,3,Arabia Saudita,-,-,x,Mexico
+Julian,1,1,Argentina,-,x,-,Arabia Saudita
+Julian,2,1,Polonia,-,-,x,Mexico
+Julian,1,2,Argentina,x,-,-,Mexico
+Julian,2,2,Arabia Saudita,-,x,-,Polonia
+Julian,1,3,Argentina,x,-,-,Polonia
+Julian,2,3,Arabia Saudita,-,x,-,Mexico
