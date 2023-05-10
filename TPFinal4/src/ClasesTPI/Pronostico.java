@@ -1,6 +1,7 @@
 package ClasesTPI;
 
 public class Pronostico {
+	private String clave;
 	private String participante;
 	private int nroPartidoPronostico;
 	private int nroRondaPronostico;
@@ -12,6 +13,7 @@ public class Pronostico {
 
 	
 	public Pronostico(String participante, int nroPartidoPronostico, int nroRondaPronostico, String equipo1, String gana1, String empate, String gana2, String equipo2) {
+		this.clave = String.valueOf(nroRondaPronostico) + String.valueOf(nroPartidoPronostico);
 		this.participante = participante;
 		this.nroPartidoPronostico = nroPartidoPronostico;
 		this.nroRondaPronostico = nroRondaPronostico;
@@ -22,6 +24,18 @@ public class Pronostico {
 		this.equipo2 = equipo2;
 	}
 
+	
+	public String getClave() {
+		return clave;
+	}
+
+
+	public void setClave(String clave) {
+		this.clave = clave;
+	}
+
+	
+	
 
 	public String getParticipante() {
 		return participante;
@@ -30,7 +44,6 @@ public class Pronostico {
 	public void setParticipante(String participante) {
 		this.participante = participante;
 	}
-
 
 	
 	

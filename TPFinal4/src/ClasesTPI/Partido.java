@@ -3,6 +3,7 @@ package ClasesTPI;
 public class Partido {
 	private int idPartido;
 	private int idRonda;
+	private String clave;
 	private String equipo1;
 	private String equipo2;
 	private int golesEquipo1;
@@ -11,12 +12,23 @@ public class Partido {
 	
 	// constructor
 	public Partido(int idPartido, int idRonda, String equipo1, String equipo2, int golesEquipo1, int golesEquipo2) {
+		this.clave = String.valueOf(idRonda) + String.valueOf(idPartido);
 		this.idPartido = idPartido;
 		this.idRonda = idRonda;
 		this.equipo1 = equipo1;
 		this.equipo2 = equipo2;
 		this.golesEquipo1 = golesEquipo1;
 		this.golesEquipo2 = golesEquipo2;
+	}
+
+
+	public String getClave() {
+		return clave;
+	}
+
+
+	public void setClave(String clave) {
+		this.clave = clave;
 	}
 
 

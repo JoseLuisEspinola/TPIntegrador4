@@ -17,3 +17,9 @@ Julian,1,2,Argentina,x,-,-,Mexico
 Julian,2,2,Arabia Saudita,-,x,-,Polonia
 Julian,1,3,Argentina,x,-,-,Polonia
 Julian,2,3,Arabia Saudita,-,x,-,Mexico
+Federico,1,1,Argentina,-,-,x,Arabia Saudita
+Federico,2,1,Polonia,-,x,-,Mexico
+Federico,1,2,Argentina,x,-,-,Mexico
+Federico,2,2,Arabia Saudita,-,-,x,Polonia
+Federico,1,3,Argentina,x,-,-,Polonia
+Federico,2,3,Arabia Saudita,-,-,x,Mexico

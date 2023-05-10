@@ -17,7 +17,7 @@ public class Principal {
 
 		HashMap<String, Integer> participan = new HashMap<String, Integer>(); // guarda los nombres de los participantes
 																				// y sus respectivos puntajes
-		HashMap<Integer, Partido> mapPartidos = new HashMap<Integer, Partido>();
+		HashMap<String, Partido> mapPartidos = new HashMap<String, Partido>();
 
 		ArrayList<Pronostico> arrayPronosticos = new ArrayList<Pronostico>();
 
@@ -56,6 +56,7 @@ public class Principal {
 			// HashMap<Integer, Partido> mapPartidos = new HashMap<Integer, Partido>();
 			Partido p;
 			// variables para instanciar un partido
+			String clave;
 			int idPartido;
 			int idRonda;
 			String equipo1;
@@ -74,6 +75,7 @@ public class Principal {
 				if(i > 0) {
 				idPartido = Integer.parseInt(equipoResultado[0]);
 				idRonda = Integer.parseInt(equipoResultado[1]);
+				clave = String.valueOf(idRonda) + String.valueOf(idPartido);
 				equipo1 = equipoResultado[2];
 				equipo2 = equipoResultado[5];
 				golesEquipo1 = Integer.parseInt(equipoResultado[3]);
@@ -86,7 +88,7 @@ public class Principal {
 				System.out.println("   " + idPartido + "       " + idRonda + "    " + (equipo1 + String.format("%" + (22 - equipo1.length())  + "s", "")) + golesEquipo1 + "               " + golesEquipo2 + "       " + equipo2);
 					
 				// lo agrego al hashmap key --> idPartido
-				mapPartidos.put(idPartido, p);
+				mapPartidos.put(clave, p);
 				
 				} else {
 					System.out.println(Colores.ANSI_GREEN + equipoResultado[0] + "  " + equipoResultado[1] + "  " + equipoResultado[2] + "          " + equipoResultado[3] + "     " + equipoResultado[4] + "  " + equipoResultado[5] + Colores.ANSI_RESET);  // Encabezado de partido
@@ -152,7 +154,7 @@ public class Principal {
 			// ============================================================================
 			for (Pronostico pronostico : arrayPronosticos) {
 		
-				partido = mapPartidos.get(pronostico.getNroPartidoPronostico());
+				partido = mapPartidos.get(pronostico.getClave());
 				String[] resulPartido1 = partido.getGanador();
 				
 				if (resulPartido1[4].equalsIgnoreCase("x")) {
