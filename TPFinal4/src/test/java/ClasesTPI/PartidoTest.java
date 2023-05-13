@@ -1,14 +1,12 @@
-package TPFinal4;
+package ClasesTPI;
 
 import static org.junit.Assert.assertArrayEquals;
-
 import org.junit.Test;
-
 import ClasesTPI.Partido;
 
 public class PartidoTest {
 
-    @Test
+	@Test
     public void testGetGanador() {
         Partido partido = new Partido(1, 1, "Equipo 1", "Equipo 2", 3, 2);
         String[] resultadoEsperado = new String[] {"", "", "", "Equipo 1", "x", "-", "-", "Equipo 2"};
@@ -22,4 +20,5 @@ public class PartidoTest {
         resultadoEsperado = new String[] {"", "", "", "Equipo 1", "-", "x", "-", "Equipo 2"};
         assertArrayEquals(resultadoEsperado, partido.getGanador());
     }
+	
 }

@@ -22,5 +22,4 @@ public class Colores {
 	public static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
 	public static final String ANSI_RESET_BACKGROUND = "\u001B[10m";
 	
-	
 }
